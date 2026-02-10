@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule | Biomaterials Day 2025</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Header Navigation */
+        header {
+            background-color: #003087;
+            padding: 0;
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo img {
+            height: 60px;
+            width: auto;
+        }
+
+        .logo-text {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            transition: opacity 0.3s;
+        }
+
+        .nav-links a:hover {
+            opacity: 0.8;
+        }
+
+        /* Page Header */
+        .page-header {
+            background: linear-gradient(135deg, #003087 0%, #0066cc 100%);
+            color: white;
+            text-align: center;
+            padding: 60px 30px;
+        }
+
+        .page-header h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .page-header p {
+            font-size: 18px;
+        }
+
+        /* Content Section */
+        .content {
+            max-width: 1000px;
+            margin: 60px auto;
+            padding: 0 30px;
+        }
+
+        .content h2 {
+            color: #003087;
+            font-size: 32px;
+            margin-bottom: 30px;
+            border-bottom: 3px solid #003087;
+            padding-bottom: 10px;
+        }
+
+        /* Schedule Table */
+        .schedule-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 40px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .schedule-table thead {
+            background-color: #003087;
+            color: white;
+        }
+
+        .schedule-table th {
+            padding: 15px;
+            text-align: left;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .schedule-table td {
+            padding: 15px;
+            border-bottom: 1px solid #e0e0e0;
+            font-size: 16px;
+        }
+
+        .schedule-table tbody tr:hover {
+            background-color: #f5f8fc;
+        }
+
+        .time-col {
+            width: 150px;
+            font-weight: 600;
+            color: #003087;
+        }
+
+        .event-col {
+            color: #333;
+        }
+
+        .location-col {
+            width: 200px;
+            color: #666;
+            font-style: italic;
+        }
+
+        /* Event Type Badge */
+        .event-badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 13px;
+            font-weight: 600;
+            margin-left: 10px;
+        }
+
+        .keynote {
+            background-color: #ffd700;
+            color: #333;
+        }
+
+        .session {
+            background-color: #e3f2fd;
+            color: #0066cc;
+        }
+
+        .break {
+            background-color: #f0f0f0;
+            color: #666;
+        }
+
+        .networking {
+            background-color: #e8f5e9;
+            color: #2e7d32;
+        }
+
+        /* Section Divider */
+        .section-divider {
+            background-color: #f0f4f8;
+            padding: 12px 15px;
+            font-weight: bold;
+            color: #003087;
+            font-size: 18px;
+        }
+
+        /* Info Box */
+        .info-box {
+            background-color: #f0f4f8;
+            border-left: 5px solid #003087;
+            padding: 25px;
+            margin: 30px 0;
+            border-radius: 5px;
+        }
+
+        .info-box h3 {
+            color: #003087;
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+
+        .info-box p {
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #003087;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin-top: 60px;
+        }
+
+        footer p {
+            font-size: 16px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .schedule-table {
+                font-size: 14px;
+            }
+
+            .schedule-table th,
+            .schedule-table td {
+                padding: 10px;
+            }
+
+            .location-col {
+                display: none;
+            }
+
+            .page-header h1 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="IMG_1216.jpg" alt="BMES/SFB Logo">
+                <span class="logo-text">Biomaterials Day 2026</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="page-header">
+        <h1>Conference Schedule</h1>
+        <p>Biomaterials Day 2025 - University of Memphis</p>
+    </section>
+
+    <section class="content">
+        <div class="info-box">
+            <h3>Event Information</h3>
+            <p><strong>Date:</strong> March 20, 2026</p>
+            <p><strong>Location:</strong> FedEx Institute of Technology @ The University of Memphis</p>
+            <p>Please arrive 15 minutes early for registration and check-in</p>
+        </div>
+
+        <h2>Schedule at a Glance</h2>
+
+        <table class="schedule-table">
+            <thead>
+                <tr>
+                    <th class="time-col">Time</th>
+                    <th class="event-col">Event</th>
+                    <th class="location-col">Location</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="3" class="section-divider">Morning Session</td>
+                </tr>
+                <tr>
+                    <td class="time-col">8:30 - 9:00 AM</td>
+                    <td class="event-col">Registration & Poster setup <span class="event-badge break">General</span></td>
+                    <td class="location-col">Main Lobby</td>
+                </tr>
+                <tr>
+                    <td class="time-col">9:00 - 9:15 AM</td>
+                    <td class="event-col">Opening Remarks</td>
+                    <td class="location-col">The Zone</td>
+                </tr>
+                <tr>
+                    <td class="time-col">9:15 - 10:00 AM</td>
+                    <td class="event-col">Keynote Presentation <span class="event-badge keynote">Keynote</span><br>
+                    <em>Speaker: Dr. Issac Rodriguez</em><br>
+                    <em>Title: [Insert Presentation Title]</em></td>
+                    <td class="location-col">The Zone</td>
+                </tr>
+                <tr>
+                    <td class="time-col">10:00 - 10:10 AM</td>
+                    <td class="event-col">Break</td>
+                    <td class="location-col"></td>
+                </tr>
+                <tr>
+                    <td class="time-col">10:10 - 11:20 AM</td>
+                    <td class="event-col">Faculty Presentations<br>
+                    <td class="location-col">Room 101</td>
+                </tr>
+                
+                <tr>
+                    <td colspan="3" class="section-divider">Lunch & Seminar</td>
+                </tr>
+                <tr>
+                    <td class="time-col">11:20 - 12:00 PM</td>
+                    <td class="event-col">Lunch Break</td>
+                    <td class="location-col">Cyber Cafe</td>
+                </tr>
+                <tr>
+                    <td class="time-col">12:00 - 1:00 PM</td>
+                    <td class="event-col">BME Seminar<br>
+                    <td class="location-col">The Zone</td>
+                </tr>
+
+                <tr>
+                    <td colspan="3" class="section-divider">Afternoon Session</td>
+                </tr>
+                <tr>
+                    <td class="time-col">1:00 - 1:45 PM</td>
+                    <td class="event-col">Poster Presentation<br>
+                    <td class="location-col">TBD</td>
+                </tr>
+                <tr>
+                    <td class="time-col">1:45 - 2:00 PM</td>
+                    <td class="event-col">Break</td>
+                    <td class="location-col"></td>
+                </tr>
+                <tr>
+                    <td class="time-col">2:00 - 2:45 PM</td>
+                    <td class="event-col">3MT Session<br>
+                    <em>Topic: Biomaterials for Drug Delivery</em></td>
+                    <td class="location-col">The Zone</td>
+                </tr>
+
+                <tr>
+                    <td class="time-col">2:45 - 2:55 PM</td>
+                    <td class="event-col">Break<br>
+                    <td class="location-col"></td>
+                </tr>
+
+                <tr>
+                    <td class="time-col">2:55 - 4:05 PM</td>
+                    <td class="event-col">Faculty Presentations<br>
+                    <td class="location-col">The Zone</td>
+                </tr>
+
+                <tr>
+                    <td colspan="3" class="section-divider">Closing</td>
+                </tr>
+                <tr>
+                    <td class="time-col">4:15 - 5:00 PM</td>
+                    <td class="event-col">Closing Reception and Awards Ceremony<br>
+                    <td class="location-col"></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="info-box">
+            <h3>Important Notes</h3>
+            <p>• All times are subject to change. Please check for updates on the day of the event.</p>
+            <p>• Poster presenters should set up their posters when they register.</p>
+            <p>• Oral presenters should check in with session chairs 15 minutes before their session.</p>
+            <p>• Certificates of attendance will be provided at the registration desk.</p>
+            <p>• For questions or assistance during the event, please visit the registration desk.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 University of Memphis BMES/SFB Chapter | Biomaterials Day</p>
+        <p>Department of Biomedical Engineering</p>
+    </footer>
+</body>
+</html>
